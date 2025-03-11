@@ -34,5 +34,5 @@ jobs:
         platforms: linux/amd64,linux/arm64
         push: true
         tags: |
-          ${{ secrets.DOCKERHUB_USERNAME }}/stock-scanner:latest
-          ${{ secrets.DOCKERHUB_USERNAME }}/stock-scanner:${{ env.TIME }}
+          ricebug/stock-scanner:latest
+          ricebug/stock-scanner:${{ env.TIME }}
