@@ -32,3 +32,6 @@ html5lib==1.1
 lxml==4.9.4
 jsonpath==0.82.2
 openpyxl==3.1.5
+
+# 转成pdf文件
+fpdf==1.7.2
