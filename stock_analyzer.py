@@ -264,7 +264,6 @@ class StockAnalyzer:
             if market_type in ['ETF', 'LOF']:
                 prompt = f"""
                 分析基金 {stock_code}：
-
                 技术指标概要：
                 {technical_summary}
                 
@@ -278,13 +277,13 @@ class StockAnalyzer:
                 4. 短期和中期净值预测
                 5. 关键价格位分析
                 6. 申购赎回建议（包含止损位）
+                7. 中长线持仓建议
                 
                 请基于技术指标和市场表现进行分析，给出具体数据支持。
                 """
             elif market_type == 'US':
                 prompt = f"""
                 分析美股 {stock_code}：
-
                 技术指标概要：
                 {technical_summary}
                 
@@ -298,13 +297,13 @@ class StockAnalyzer:
                 4. 短期和中期目标价位（美元）
                 5. 关键技术位分析
                 6. 具体交易建议（包含止损位）
+                7. 中长线持仓建议
                 
                 请基于技术指标和美股市场特点进行分析，给出具体数据支持。
                 """
             elif market_type == 'HK':
                 prompt = f"""
                 分析港股 {stock_code}：
-
                 技术指标概要：
                 {technical_summary}
                 
@@ -318,13 +317,13 @@ class StockAnalyzer:
                 4. 短期和中期目标价位（港币）
                 5. 关键技术位分析
                 6. 具体交易建议（包含止损位）
+                7. 中长线持仓建议
                 
                 请基于技术指标和港股市场特点进行分析，给出具体数据支持。
                 """
             else:  # A股
                 prompt = f"""
                 分析A股 {stock_code}：
-
                 技术指标概要：
                 {technical_summary}
                 
@@ -338,6 +337,7 @@ class StockAnalyzer:
                 4. 短期和中期目标价位
                 5. 关键技术位分析
                 6. 具体交易建议（包含止损位）
+                7. 中长线持仓建议
                 
                 请基于技术指标和A股市场特点进行分析，给出具体数据支持。
                 """
