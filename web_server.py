@@ -308,5 +308,5 @@ def test_api_connection():
         return jsonify({'success': False, 'message': f'API 测试连接时出错: {str(e)}'}), 500
 
 if __name__ == '__main__':
-    logger.info("AI股票分析系统启动")
+    logger.info("股票分析系统启动")
     app.run(host='0.0.0.0', port=8888, debug=True)
